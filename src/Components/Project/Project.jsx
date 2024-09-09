@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { iconImages } from "../../Utils/images";
+import Items from "./Items/Items";
 
 const Project = () => {
   const [filter, setFilter] = useState("all");
@@ -62,7 +63,11 @@ const Project = () => {
             } px-4 py-2 flex items-center justify-center gap-2 cursor-pointer`}
           >
             <p className="text-sm">Lekki Gardens</p>
-            <div className={`text-xs text-white ${filter === 'lekki' ? 'bg-[#007BFF]' : 'bg-[#667185]'} rounded-xl px-2 py-0 flex items-center justify-center`}>
+            <div
+              className={`text-xs text-white ${
+                filter === "lekki" ? "bg-[#007BFF]" : "bg-[#667185]"
+              } rounded-xl px-2 py-0 flex items-center justify-center`}
+            >
               80
             </div>
           </div>
@@ -76,7 +81,11 @@ const Project = () => {
             } px-4 py-2 flex items-center justify-center gap-2 cursor-pointer`}
           >
             <p className="text-sm">Ocean lake</p>
-            <div className={`text-xs text-white ${filter === 'ocean' ? 'bg-[#007BFF]' : 'bg-[#667185]'} rounded-xl px-2 py-0 flex items-center justify-center`}>
+            <div
+              className={`text-xs text-white ${
+                filter === "ocean" ? "bg-[#007BFF]" : "bg-[#667185]"
+              } rounded-xl px-2 py-0 flex items-center justify-center`}
+            >
               10
             </div>
           </div>
@@ -101,10 +110,23 @@ const Project = () => {
             } px-4 py-2 flex items-center justify-center gap-2 cursor-pointer`}
           >
             <p className="text-sm">Banana Max express</p>
-            <div className={`text-xs text-white ${filter === 'banana' ? 'bg-[#007BFF]' : 'bg-[#667185]'} rounded-xl px-2 py-0 flex items-center justify-center`}>
+            <div
+              className={`text-xs text-white ${
+                filter === "banana" ? "bg-[#007BFF]" : "bg-[#667185]"
+              } rounded-xl px-2 py-0 flex items-center justify-center`}
+            >
               0
             </div>
           </div>
+        </div>
+
+        <div className="grid grid-cols-3 gap-10">
+          <Items />
+          <Items />
+          <Items />
+          <Items />
+          <Items />
+          <Items />
         </div>
       </div>
     </div>
