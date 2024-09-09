@@ -1,10 +1,11 @@
+import Header from "../Header/Header";
 
 const Home = () => {
   return (
-    <div className="border border-red-500">
-
+    <div className="">
+      <Header />
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;
