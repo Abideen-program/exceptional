@@ -3,7 +3,7 @@ import { iconImages } from "../../Utils/images";
 
 const Header = () => {
   return (
-    <div className="border border-red-400 h-[70px] px-[72px] py-6 flex items-center bg-white">
+    <div className="border border-red-400 h-[70px] px-[72px] py-6 flex items-center bg-white fixed right-0 left-0 top-0 z-[999]">
       <div className="border border-blue-400 flex items-center justify-between w-[70%] ml-auto">
         <div className="inter">
           <ul className="flex items-center justify-center gap-6">
