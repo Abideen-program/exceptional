@@ -120,13 +120,19 @@ const Project = () => {
           </div>
         </div>
 
-        <div className="grid grid-cols-3 gap-10">
-          <Items />
-          <Items />
-          <Items />
-          <Items />
-          <Items />
-          <Items />
+        <div className="flex flex-col gap-10">
+          <div className="grid grid-cols-3 gap-10">
+            <Items />
+            <Items />
+            <Items />
+            <Items />
+            <Items />
+            <Items />
+          </div>
+
+          <button className="text-white bg-[#007BFF] px-6 py-4 rounded-[10px] w-[160px] mx-auto text-lg">
+            Load more
+          </button>
         </div>
       </div>
     </div>
