@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { iconImages } from "../../Utils/images";
 import Items from "./Items/Items";
+import { motion } from "framer-motion";
 
 const Project = () => {
   const [filter, setFilter] = useState("all");
@@ -31,18 +32,35 @@ const Project = () => {
         </div>
 
         <div className="flex flex-col gap-4">
-          <h2 className="text-[#000000] text-[40px] tracking-wide">Featured Projects </h2>
-          <div className="w-[75%]">
+          <motion.h2
+            initial={{ x: -100, opacity: 0 }}
+            whileInView={{ x: 0, opacity: 1 }}
+            transition={{ duration: 0.5, ease: "easeIn" }}
+            className="text-[#000000] text-[40px] tracking-wide"
+          >
+            Featured Projects{" "}
+          </motion.h2>
+          <motion.div
+            initial={{ y: 100, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            transition={{ duration: 0.7, ease: "easeIn" }}
+            className="w-[75%]"
+          >
             <p className="text-[17px] text-[#667185] tracking-wide">
               Discover your dream property from your favorite developers.
               Explore our premium listings and find the perfect home or
               investment opportunity tailored to your preferences. Start Your
               Search Today.
             </p>
-          </div>
+          </motion.div>
         </div>
 
-        <div className="border-b flex items-center gap-2 w-fit">
+        <motion.div
+          initial={{ x: 120, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          transition={{ duration: 0.7, ease: "easeIn" }}
+          className="border-b flex items-center gap-2 w-fit"
+        >
           <div
             onClick={() => setFilter("all")}
             className={`${
@@ -118,7 +136,7 @@ const Project = () => {
               0
             </div>
           </div>
-        </div>
+        </motion.div>
 
         <div className="flex flex-col gap-10">
           <div className="grid grid-cols-3 gap-10">
@@ -130,9 +148,12 @@ const Project = () => {
             <Items />
           </div>
 
-          <button className="text-white bg-[#007BFF] px-6 py-4 rounded-[10px] w-[160px] mx-auto text-lg">
+          <motion.button
+            whileTap={{ scale: 0.95 }}
+            className="text-white bg-[#007BFF] px-6 py-4 rounded-[10px] w-[160px] mx-auto text-lg shadow-lg shadow-[#007BFF33]"
+          >
             Load more
-          </button>
+          </motion.button>
         </div>
       </div>
     </div>
