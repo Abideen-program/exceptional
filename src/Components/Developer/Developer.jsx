@@ -12,11 +12,11 @@ const Developer = () => {
     <div className="px-20 py-5">
       <div className="flex flex-col">
         <div className="flex flex-col gap-4">
-          <h2 className="text-[#000000] text-[40px]">
+          <h2 className="text-[#000000] text-[40px] tracking-wide">
             Top Real Estate Developers
           </h2>
           <div className="w-[60%]">
-            <p className="text-[17px] text-[#667185]">
+            <p className="text-[17px] text-[#667185] tracking-wide">
               Discover projects from leading developers in Lagos, offering
               exceptional properties tailored to your lifestyle and investment
               goals.

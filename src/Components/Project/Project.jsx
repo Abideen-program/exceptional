@@ -31,9 +31,9 @@ const Project = () => {
         </div>
 
         <div className="flex flex-col gap-4">
-          <h2 className="text-[#000000] text-[40px]">Featured Projects </h2>
-          <div className="w-[70%]">
-            <p className="text-[17px] text-[#667185]">
+          <h2 className="text-[#000000] text-[40px] tracking-wide">Featured Projects </h2>
+          <div className="w-[75%]">
+            <p className="text-[17px] text-[#667185] tracking-wide">
               Discover your dream property from your favorite developers.
               Explore our premium listings and find the perfect home or
               investment opportunity tailored to your preferences. Start Your
