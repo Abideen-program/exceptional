@@ -3,10 +3,10 @@ import { iconImages } from "../../Utils/images";
 const Footer = () => {
   return (
     <div className="p-6">
-      <div className="px-[56px] py-[40px] bg-[#000000] rounded-[20px] flex flex-col gap-[40px]">
+      <div className="px-4 md:px-[56px] py-[40px] bg-[#000000] rounded-[20px] flex flex-col gap-5 md:gap-[40px]">
         <div className="flex flex-col items-center justify-center gap-2">
           <p className="text-xs 3xl:text-base font-[500] text-[#F7F9FC]">CONVINCED?</p>
-          <h3 className="text-white text-2xl xl:text-[28px] 3xl:text-3xl font-bold">
+          <h3 className="text-white text-lg md:text-2xl xl:text-[28px] 3xl:text-3xl font-bold text-center">
             Let’s create magic together
           </h3>
           <p className="text-[#F7F9FC] text-center text-sm xl:text-base 3xl:text-lg">

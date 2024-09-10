@@ -7,9 +7,9 @@ const Project = () => {
   const [filter, setFilter] = useState("all");
 
   return (
-    <div className="px-20 py-10">
+    <div className="px-5 md:px-20 py-10">
       <div className="flex flex-col gap-8">
-        <div className="border-[0.8px] border-[#E3E3E7] h-[58px] rounded-3xl p-1 flex items-center relative">
+        <div className="hidden border-[0.8px] border-[#E3E3E7] h-[58px] rounded-3xl p-1 md:flex items-center relative">
           <input
             type="text"
             placeholder="Search property state or city"
@@ -31,12 +31,39 @@ const Project = () => {
           </div>
         </div>
 
+        <div className="flex flex-col gap-1 md:hidden">
+          <div className="border-[0.8px] border-[#E3E3E7] h-[58px] rounded-3xl flex items-center relative">
+            <input
+              type="text"
+              placeholder="Search property state or city"
+              className="w-full h-full px-10 rounded-3xl placeholder:text-[#7D7F88] placeholder:md:text-sm placeholder:xl:text-base focus:outline-none"
+            />
+            <img
+              src={iconImages.Search}
+              alt="search"
+              className="absolute top-[20px] left-3"
+            />
+          </div>
+
+          <div className="border-[0.8px] border-[#E3E3E7] h-[58px] rounded-3xl flex items-center relative">
+            <input
+              type="text"
+              placeholder="Search all filters"
+              className="w-full h-full px-5 rounded-3xl placeholder:text-[#7D7F88] placeholder:md:text-sm placeholder:xl:text-base focus:outline-none"
+            />
+
+            <div className="absolute top-[13px] right-3 bg-[#007BFF] h-[30px] w-[30px] rounded-lg flex items-center justify-center cursor-pointer">
+              <img src={iconImages.Filter} alt="filter" />
+            </div>
+          </div>
+        </div>
+
         <div className="flex flex-col gap-4">
           <motion.h2
             initial={{ x: -100, opacity: 0 }}
             whileInView={{ x: 0, opacity: 1 }}
             transition={{ duration: 0.5, ease: "easeIn" }}
-            className="text-[#000000] text-[30px] xl:text-[40px] tracking-wide"
+            className="text-[#000000] text-[25px] md:text-[30px] xl:text-[40px] tracking-wide"
           >
             Featured Projects
           </motion.h2>
@@ -46,7 +73,7 @@ const Project = () => {
             transition={{ duration: 0.7, ease: "easeIn" }}
             className="xl:w-[75%]"
           >
-            <p className="text-[17px] 3xl:text-2xl text-[#667185] tracking-wide">
+            <p className="text-sm md:text-[17px] 3xl:text-2xl text-[#667185] tracking-wide">
               Discover your dream property from your favorite developers.
               Explore our premium listings and find the perfect home or
               investment opportunity tailored to your preferences. Start Your
@@ -59,7 +86,7 @@ const Project = () => {
           initial={{ x: 120, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
           transition={{ duration: 0.7, ease: "easeIn" }}
-          className="xl:border-b flex items-center gap-2 xl:w-fit"
+          className="xl:border-b grid grid-cols-2  md:flex items-center gap-2 xl:w-fit"
         >
           <div
             onClick={() => setFilter("all")}
@@ -141,7 +168,7 @@ const Project = () => {
         </motion.div>
 
         <div className="flex flex-col gap-10">
-          <div className="grid grid-cols-2 xl:grid-cols-3 gap-10">
+          <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-10">
             <Items />
             <Items />
             <Items />
@@ -152,7 +179,7 @@ const Project = () => {
 
           <motion.button
             whileTap={{ scale: 0.95 }}
-            className="text-white bg-[#007BFF] px-6 py-4 rounded-[10px] w-[160px] 3xl:w-[200px] mx-auto text-lg 3xl:text-2xl shadow-lg shadow-[#007BFF33]"
+            className="text-white bg-[#007BFF]  py-3 px-6 md:py-4 rounded-[10px] md:w-[160px] 3xl:w-[200px] mx-auto text-lg 3xl:text-2xl shadow-lg shadow-[#007BFF33]"
           >
             Load more
           </motion.button>
