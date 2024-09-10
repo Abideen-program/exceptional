@@ -16,8 +16,8 @@ const Developer = () => {
         <div className="flex flex-col gap-4">
           <motion.h2
             initial={{ x: "50%", opacity: 0 }}
-            whileInView={{ x: 0.4, opacity: 1 }}
-            transition={{ duration: 1, ease: "easeIn" }}
+            whileInView={{ x: 0, opacity: 1 }}
+            transition={{ duration: 0.4, ease: "easeIn" }}
             className="text-[#000000] text-[40px] tracking-wide"
           >
             Top Real Estate Developers

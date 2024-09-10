@@ -7,19 +7,31 @@ import "swiper/css/navigation";
 import TestimonialItem from "./TestimonialItem";
 import SliderButton from "../Developer/SliderButton";
 
+import { motion } from "framer-motion";
+
 const Testimonal = () => {
   return (
     <div className="px-20 py-5">
       <div className="flex flex-col">
         <div className="flex flex-col items-center justify-center gap-4">
-          <h2 className="text-[#000000] text-[40px] tracking-wide">
+          <motion.h2
+            initial={{ y: -100, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            transition={{ duration: 0.5, ease: "easeIn" }}
+            className="text-[#000000] text-[40px] tracking-wide"
+          >
             Testimonials
-          </h2>
+          </motion.h2>
 
-          <p className="text-[17px] text-[#667185] tracking-wide">
+          <motion.p
+            initial={{ x: -100, opacity: 0 }}
+            whileInView={{ x: 0, opacity: 1 }}
+            transition={{ duration: 0.5, ease: "easeIn" }}
+            className="text-[17px] text-[#667185] tracking-wide"
+          >
             Here's what our clients have to say about their real estate
             experiences with us.
-          </p>
+          </motion.p>
         </div>
 
         <div className="mt-10">
