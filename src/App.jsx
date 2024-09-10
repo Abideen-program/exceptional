@@ -1,3 +1,4 @@
+import Developer from "./Components/Developer/Developer";
 import Home from "./Components/Home/Home";
 import Project from "./Components/Project/Project";
 
@@ -6,6 +7,7 @@ const App = () => {
     <>
       <Home />
       <Project />
+      <Developer />
     </>
   );
 };

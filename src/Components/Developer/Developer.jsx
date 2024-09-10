@@ -1,0 +1,63 @@
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay, Pagination, Navigation } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+
+import DeveloperItem from "./DeveloperItem";
+import SliderButton from "./SliderButton";
+
+const Developer = () => {
+  return (
+    <div className="px-20 py-5">
+      <div className="flex flex-col">
+        <div className="flex flex-col gap-4">
+          <h2 className="text-[#000000] text-[40px]">
+            Top Real Estate Developers
+          </h2>
+          <div className="w-[60%]">
+            <p className="text-[17px] text-[#667185]">
+              Discover projects from leading developers in Lagos, offering
+              exceptional properties tailored to your lifestyle and investment
+              goals.
+            </p>
+          </div>
+        </div>
+
+        <div className="mt-5">
+          <Swiper
+            className="swiper-container w-full"
+            spaceBetween={20}
+            centeredSlides={false}
+            modules={[Autoplay, Pagination, Navigation]}
+            autoplay={{
+              delay: 3000,
+              disableOnInteraction: false,
+            }}
+            breakpoints={{
+              1024: {
+                slidesPerView: 2,
+                // spaceBetween: 100,
+              },
+            }}
+          >
+            <SwiperSlide>
+              <DeveloperItem />
+            </SwiperSlide>
+
+            <SwiperSlide>
+              <DeveloperItem />
+            </SwiperSlide>
+
+            <SwiperSlide>
+              <DeveloperItem />
+            </SwiperSlide>
+            <SliderButton />
+          </Swiper>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Developer;
