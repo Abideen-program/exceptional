@@ -1,9 +1,15 @@
 import React from "react";
 import { iconImages } from "../../Utils/images";
+import { motion } from "framer-motion";
 
 const DeveloperItem = () => {
   return (
-    <div className="relative rounded-2xl w-fit">
+    <motion.div
+      initial={{ y: 100, opacity: 0 }}
+      whileInView={{ y: 0, opacity: 1 }}
+      transition={{ duration: 0.6, ease: "easeIn" }}
+      className="relative rounded-2xl w-fit"
+    >
       <img src={iconImages.Big} alt="" className="" />
 
       <div className="absolute bottom-8 left-8 flex flex-col gap-1">
@@ -20,7 +26,7 @@ const DeveloperItem = () => {
           View Projects
         </button>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
