@@ -17,32 +17,56 @@ const Items = () => {
       />
       <div className="flex flex-col gap-2">
         <div className="flex items-center justify-between">
-          <p className="text-[#2C2C2C] font-bold text-[18px]">
+          <p className="text-[#2C2C2C] font-bold xl:text-[18px] 3xl:text-xl">
             Grenadines Heights
           </p>
 
           <div className="flex items-center gap-1">
-            <img src={iconImages.Love} alt="love" className="w-[14px]" />
-            <p className="text-sm text-[#2C2C2C] font-semibold">890</p>
+            <img
+              src={iconImages.Love}
+              alt="love"
+              className="w-[14px] 3xl:w-[20px]"
+            />
+            <p className="text-sm 3xl:text-lg text-[#2C2C2C] font-semibold">
+              890
+            </p>
           </div>
         </div>
         <div className="flex items-center gap-5">
           <div className="flex items-center gap-1">
-            <img src={iconImages.Location} alt="love" className="w-[14px]" />
-            <p className="text-sm text-[#2C2C2C] font-[400]">Ikeja, Lagos</p>
+            <img
+              src={iconImages.Location}
+              alt="love"
+              className="w-[14px] 3xl:w-[20px]"
+            />
+            <p className="text-sm 3xl:text-xl text-[#2C2C2C] font-[400]">
+              Ikeja, Lagos
+            </p>
           </div>
 
           <div className="flex items-center gap-1">
-            <img src={iconImages.Shower} alt="shower" className="w-[14px]" />
-            <p className="text-sm text-[#2C2C2C] font-[400]">4 Baths</p>
+            <img
+              src={iconImages.Shower}
+              alt="shower"
+              className="w-[14px] 3xl:w-[20px]"
+            />
+            <p className="text-sm 3xl:text-xl text-[#2C2C2C] font-[400]">
+              4 Baths
+            </p>
           </div>
 
           <div className="flex items-center gap-1">
-            <img src={iconImages.Bed} alt="love" className="w-[14px]" />
-            <p className="text-sm text-[#2C2C2C] font-[400]">4 Beds</p>
+            <img
+              src={iconImages.Bed}
+              alt="love"
+              className="w-[14px] 3xl:w-[20px]"
+            />
+            <p className="text-sm 3xl:text-xl text-[#2C2C2C] font-[400]">
+              4 Beds
+            </p>
           </div>
         </div>
-        <p className="text-[#007BFF] mt-2 cursor-pointer font-semibold">
+        <p className="text-[#007BFF] mt-2 cursor-pointer font-semibold text-sm xl:text-base 3xl:text-2xl">
           View Details
         </p>
       </div>

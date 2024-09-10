@@ -13,12 +13,12 @@ const Testimonal = () => {
   return (
     <div className="px-20 py-5">
       <div className="flex flex-col">
-        <div className="flex flex-col items-center justify-center gap-4">
+        <div className="flex flex-col items-center justify-center gap-3 xl:gap-4">
           <motion.h2
             initial={{ y: -100, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.5, ease: "easeIn" }}
-            className="text-[#000000] text-[40px] tracking-wide"
+            className="text-[#000000] text-[30px] xl:text-[40px] tracking-wide"
           >
             Testimonials
           </motion.h2>
@@ -27,7 +27,7 @@ const Testimonal = () => {
             initial={{ x: -100, opacity: 0 }}
             whileInView={{ x: 0, opacity: 1 }}
             transition={{ duration: 0.5, ease: "easeIn" }}
-            className="text-[17px] text-[#667185] tracking-wide"
+            className="xl:text-[17px] 3xl:text-2xl text-[#667185] tracking-wide text-center"
           >
             Here's what our clients have to say about their real estate
             experiences with us.
@@ -47,6 +47,11 @@ const Testimonal = () => {
             breakpoints={{
               1024: {
                 slidesPerView: 3,
+                // spaceBetween: 100,
+              },
+
+              768: {
+                slidesPerView: 2,
                 // spaceBetween: 100,
               },
             }}

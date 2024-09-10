@@ -18,16 +18,16 @@ const Developer = () => {
             initial={{ x: "50%", opacity: 0 }}
             whileInView={{ x: 0, opacity: 1 }}
             transition={{ duration: 0.4, ease: "easeIn" }}
-            className="text-[#000000] text-[40px] tracking-wide"
+            className="text-[#000000] text-[30px] xl:text-[40px] tracking-wide"
           >
             Top Real Estate Developers
           </motion.h2>
-          <div className="w-[60%]">
+          <div className="xl:w-[60%] 3xl:w-[70%]">
             <motion.p
               initial={{ x: -100, opacity: 0 }}
               whileInView={{ x: 0, opacity: 1 }}
               transition={{ duration: 0.5, ease: "easeIn" }}
-              className="text-[17px] text-[#667185] tracking-wide"
+              className="text-[17px] 3xl:text-2xl text-[#667185] tracking-wide"
             >
               Discover projects from leading developers in Lagos, offering
               exceptional properties tailored to your lifestyle and investment
@@ -47,7 +47,7 @@ const Developer = () => {
               disableOnInteraction: false,
             }}
             breakpoints={{
-              1024: {
+              768: {
                 slidesPerView: 2,
                 // spaceBetween: 100,
               },

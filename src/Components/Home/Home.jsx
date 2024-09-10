@@ -12,7 +12,7 @@ const Home = () => {
               initial={{ scale: 0, rotate: "0deg" }}
               animate={{ scale: 1, rotate: "360deg" }}
               transition={{ duration: 0.5, ease: "backInOut" }}
-              className="text-white font-[500] xl:text-[60px] 2xl:text-[72px] leading-[90px] tracking-tight"
+              className="text-white font-[500] text-[40px] xl:text-[60px] 2xl:text-[72px] xl:leading-[70px] 2xl:leading-[90px] tracking-tight"
             >
               Exceptional Real Estate Projects by Leading Developers
             </motion.h1>
@@ -21,9 +21,9 @@ const Home = () => {
               initial={{ scale: 0 }}
               animate={{ scale: 1 }}
               transition={{ duration: 0.5 }}
-              className="w-[75%]"
+              className="xl:w-[85%] 2xl:w-[75%]"
             >
-              <p className="text-white text-xl leading-[30px] tracking-tight">
+              <p className="text-white xl:text-xl 3xl:text-2xl leading-[30px] tracking-tight">
                 Explore premier real estate developments from top professionals,
                 featuring luxurious condos, serene retreats, and cutting-edge
                 commercial spaces. Experience the finest craftsmanship,
@@ -36,7 +36,7 @@ const Home = () => {
               whileHover={{ scale: 1.01 }}
               whileTap={{ scale: 0.99, rotate: "2.5deg" }}
               transition={{ duration: 0.2, ease: "easeInOut" }}
-              className="h-[82px] w-[217px] border border-white text-white p-10 text-2xl rounded-[72px] flex flex-col items-center justify-center tracking-tight animate-pulse"
+              className="xl:h-[82px] w-fit xl:w-[217px] border border-white text-white px-10 py-4 xl:p-10 xl:text-2xl rounded-3xl xl:rounded-[72px] flex flex-col items-center justify-center tracking-tight animate-pulse"
             >
               Explore
             </motion.button>

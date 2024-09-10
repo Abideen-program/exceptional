@@ -13,13 +13,13 @@ const Project = () => {
           <input
             type="text"
             placeholder="Search property state or city"
-            className="border-r border-[#E3E3E7] basis-[40%] h-full px-10 rounded-l-3xl placeholder:text-[#7D7F88] focus:outline-none"
+            className="border-r border-[#E3E3E7] basis-[40%] h-full px-10 rounded-l-3xl placeholder:text-[#7D7F88] placeholder:md:text-sm placeholder:xl:text-base focus:outline-none"
           />
 
           <input
             type="text"
             placeholder="Search all filters"
-            className="border-l border-[#E3E3E7] basis-[60%] h-full px-5 rounded-r-3xl placeholder:text-[#7D7F88] focus:outline-none"
+            className="border-l border-[#E3E3E7] basis-[60%] h-full px-5 rounded-r-3xl placeholder:text-[#7D7F88] placeholder:md:text-sm placeholder:xl:text-base focus:outline-none"
           />
           <img
             src={iconImages.Search}
@@ -36,17 +36,17 @@ const Project = () => {
             initial={{ x: -100, opacity: 0 }}
             whileInView={{ x: 0, opacity: 1 }}
             transition={{ duration: 0.5, ease: "easeIn" }}
-            className="text-[#000000] text-[40px] tracking-wide"
+            className="text-[#000000] text-[30px] xl:text-[40px] tracking-wide"
           >
-            Featured Projects{" "}
+            Featured Projects
           </motion.h2>
           <motion.div
             initial={{ y: 100, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.7, ease: "easeIn" }}
-            className="w-[75%]"
+            className="xl:w-[75%]"
           >
-            <p className="text-[17px] text-[#667185] tracking-wide">
+            <p className="text-[17px] 3xl:text-2xl text-[#667185] tracking-wide">
               Discover your dream property from your favorite developers.
               Explore our premium listings and find the perfect home or
               investment opportunity tailored to your preferences. Start Your
@@ -59,7 +59,7 @@ const Project = () => {
           initial={{ x: 120, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
           transition={{ duration: 0.7, ease: "easeIn" }}
-          className="border-b flex items-center gap-2 w-fit"
+          className="xl:border-b flex items-center gap-2 xl:w-fit"
         >
           <div
             onClick={() => setFilter("all")}
@@ -69,7 +69,7 @@ const Project = () => {
                 : "text-[#667185]"
             } px-4 py-2 flex items-center justify-center cursor-pointer`}
           >
-            <p className="text-sm">All</p>
+            <p className="text-sm 3xl:text-xl">All</p>
           </div>
 
           <div
@@ -78,11 +78,11 @@ const Project = () => {
               filter === "lekki"
                 ? "border-b border-[#007BFF] text-[#007BFF]"
                 : "text-[#667185]"
-            } px-4 py-2 flex items-center justify-center gap-2 cursor-pointer`}
+            } px-4 py-2 flex xl:flex-row flex-col items-center justify-center gap-1 xl:gap-2 cursor-pointer`}
           >
-            <p className="text-sm">Lekki Gardens</p>
+            <p className="text-sm 3xl:text-xl text-center">Lekki Gardens</p>
             <div
-              className={`text-xs text-white ${
+              className={`text-xs 3xl:text-base text-white ${
                 filter === "lekki" ? "bg-[#007BFF]" : "bg-[#667185]"
               } rounded-xl px-2 py-0 flex items-center justify-center`}
             >
@@ -96,11 +96,11 @@ const Project = () => {
               filter === "ocean"
                 ? "border-b border-[#007BFF] text-[#007BFF]"
                 : "text-[#667185]"
-            } px-4 py-2 flex items-center justify-center gap-2 cursor-pointer`}
+            } px-4 py-2 flex xl:flex-row flex-col items-center justify-center gap-1 xl:gap-2 cursor-pointer`}
           >
-            <p className="text-sm">Ocean lake</p>
+            <p className="text-sm 3xl:text-xl text-center">Ocean lake</p>
             <div
-              className={`text-xs text-white ${
+              className={`text-xs 3xl:text-base text-white ${
                 filter === "ocean" ? "bg-[#007BFF]" : "bg-[#667185]"
               } rounded-xl px-2 py-0 flex items-center justify-center`}
             >
@@ -116,7 +116,7 @@ const Project = () => {
                 : "text-[#667185]"
             } px-4 py-2 flex items-center justify-center cursor-pointer`}
           >
-            <p className="text-sm">Swiss village</p>
+            <p className="text-sm 3xl:text-xl text-center">Swiss village</p>
           </div>
 
           <div
@@ -125,11 +125,13 @@ const Project = () => {
               filter === "banana"
                 ? "border-b border-[#007BFF] text-[#007BFF]"
                 : "text-[#667185]"
-            } px-4 py-2 flex items-center justify-center gap-2 cursor-pointer`}
+            } px-4 py-2 flex xl:flex-row flex-col items-center justify-center gap-1 xl:gap-2 cursor-pointer`}
           >
-            <p className="text-sm">Banana Max express</p>
+            <p className="text-center text-sm 3xl:text-xl">
+              Banana Max express
+            </p>
             <div
-              className={`text-xs text-white ${
+              className={`text-xs 3xl:text-base text-white ${
                 filter === "banana" ? "bg-[#007BFF]" : "bg-[#667185]"
               } rounded-xl px-2 py-0 flex items-center justify-center`}
             >
@@ -139,7 +141,7 @@ const Project = () => {
         </motion.div>
 
         <div className="flex flex-col gap-10">
-          <div className="grid grid-cols-3 gap-10">
+          <div className="grid grid-cols-2 xl:grid-cols-3 gap-10">
             <Items />
             <Items />
             <Items />
@@ -150,7 +152,7 @@ const Project = () => {
 
           <motion.button
             whileTap={{ scale: 0.95 }}
-            className="text-white bg-[#007BFF] px-6 py-4 rounded-[10px] w-[160px] mx-auto text-lg shadow-lg shadow-[#007BFF33]"
+            className="text-white bg-[#007BFF] px-6 py-4 rounded-[10px] w-[160px] 3xl:w-[200px] mx-auto text-lg 3xl:text-2xl shadow-lg shadow-[#007BFF33]"
           >
             Load more
           </motion.button>
