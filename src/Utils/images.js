@@ -9,8 +9,18 @@ import Shower from "../assets/icons/shower.svg";
 import Bed from "../assets/icons/bed.svg";
 import Next from "../assets/icons/next.svg";
 import Prev from "../assets/icons/prev.svg";
+import Path from "../assets/icons/path.svg";
+import Facebook from "../assets/icons/facebook.svg";
+import Twitter from "../assets/icons/twitter.svg";
+import Instagram from "../assets/icons/instagram.svg";
+import LinkedIn from "../assets/icons/linkedin.svg";
 
 export const iconImages = {
+  Path,
+  Facebook,
+  Twitter,
+  Instagram,
+  LinkedIn,
   Next,
   Prev,
   Love,
