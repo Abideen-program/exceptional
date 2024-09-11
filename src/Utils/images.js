@@ -14,8 +14,12 @@ import Facebook from "../assets/icons/facebook.svg";
 import Twitter from "../assets/icons/twitter.svg";
 import Instagram from "../assets/icons/instagram.svg";
 import LinkedIn from "../assets/icons/linkedin.svg";
+import Hambugger from "../assets/icons/hambugger.svg";
+import Close from "../assets/icons/close.svg";
 
 export const iconImages = {
+  Close,
+  Hambugger,
   Path,
   Facebook,
   Twitter,
